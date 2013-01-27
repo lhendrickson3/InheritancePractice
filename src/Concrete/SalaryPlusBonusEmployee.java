@@ -8,6 +8,6 @@ package Concrete;
  *
  * @author User
  */
-public class SalaryPlusBonusEmployee {
+public class SalaryPlusBonusEmployee extends SalariedEmployee {
     
 }
