@@ -4,10 +4,23 @@
  */
 package Concrete;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
  */
 public class Employee {
+    Integer amountPaid;
     
+    public void paid() {
+       JOptionPane.showMessageDialog(null, getAmountPaid());
+            }
+    public void setAmountPaid(Integer Value) {
+        amountPaid = Value;
+    }
+    
+    public Integer getAmountPaid() {
+        return amountPaid;
+    }
 }
