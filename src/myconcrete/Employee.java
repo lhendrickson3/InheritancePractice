@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * @author User
  */
 public class Employee {
-    Integer amountPaid;
+    int amountPaid;
     
     public void paid() {
        JOptionPane.showMessageDialog(null, getAmountPaid());
