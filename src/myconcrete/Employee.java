@@ -11,16 +11,17 @@ import javax.swing.JOptionPane;
  * @author User
  */
 public class Employee {
-    int amountPaid;
+    double amountPaid;
     
     public void paid() {
        JOptionPane.showMessageDialog(null, getAmountPaid());
-            }
-    public void setAmountPaid(Integer Value) {
+    }
+    
+    public void setAmountPaid(double Value) {
         amountPaid = Value;
     }
     
-    public Integer getAmountPaid() {
+    public double getAmountPaid() {
         return amountPaid;
     }
 }

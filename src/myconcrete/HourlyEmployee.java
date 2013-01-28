@@ -16,7 +16,7 @@ public class HourlyEmployee extends Employee{
     
     double hourlyWage;
    
-    double pay = (hoursWorked + hourlyWage);
+    double pay;
     
     public void HowManyHoursWorked (){
     hoursWorked = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter how many hours you worked."));
@@ -40,5 +40,13 @@ public class HourlyEmployee extends Employee{
     
     public void setHourlyWage(double hourlyWage){
     this.hourlyWage = hourlyWage;
+    }
+    
+    public void setPay(){
+    pay = (hoursWorked * hourlyWage);
+    }
+    
+    public double getPay(){
+    return pay;
     }
 }
