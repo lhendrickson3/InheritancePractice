@@ -9,5 +9,7 @@ package myconcrete;
  * @author User
  */
 public class SalariedEmployee extends Employee{
-    
+ private double salary;
+ 
+ 
 }

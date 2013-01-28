@@ -12,11 +12,11 @@ import javax.swing.JOptionPane;
  */
 public class HourlyEmployee extends Employee{
    
-    double hoursWorked;
+    private double hoursWorked;
     
-    double hourlyWage;
+    private double hourlyWage;
    
-    double pay;
+    private double pay;
     
     public void HowManyHoursWorked (){
     hoursWorked = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter how many hours you worked."));
