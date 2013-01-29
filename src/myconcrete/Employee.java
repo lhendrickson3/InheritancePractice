@@ -6,10 +6,6 @@ package myconcrete;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author User
- */
 public class Employee {
     private double amountPaid;
     
