@@ -10,6 +10,7 @@ package myabstract;
  */
 public class Runner {
   public static void main(String[] args){
+  //Calling the methods from HourlyEmployee
   HourlyEmployee myEmployee = new HourlyEmployee();
   myEmployee.HowManyHoursWorked();
   myEmployee.PayPerHour();
@@ -17,7 +18,7 @@ public class Runner {
   myEmployee.setAmountPaid(myEmployee.getPay());
       System.out.println("Amount paid " + myEmployee.getAmountPaid());
   myEmployee.doSomething();
-      
+  //Calling the methods from SalariedEmployee      
   SalariedEmployee mySalariedEmployee = new SalariedEmployee();
   mySalariedEmployee.HowManyYearsWorked();
   mySalariedEmployee.YearlySalary();
@@ -25,8 +26,7 @@ public class Runner {
   mySalariedEmployee.setAmountPaid(mySalariedEmployee.getSalaryPay());
   System.out.println("Salary paid " + mySalariedEmployee.getSalaryPay());
   mySalariedEmployee.doSomething();
-  
-  
+//Calling the methods for SalaryPlusBonusEmployee   
   SalaryPlusBonusEmployee myBonusEmployee = new SalaryPlusBonusEmployee();
   myBonusEmployee.HowManyYearsWorked();
   myBonusEmployee.YearlySalary();
