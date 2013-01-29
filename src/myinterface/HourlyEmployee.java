@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *
  * @author User
  */
-public class HourlyEmployee extends Employee{
+public class HourlyEmployee implements Employee{
     private double hoursWorked;
     
     private double hourlyWage;
