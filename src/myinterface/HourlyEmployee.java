@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
  * @author User
  */
 public class HourlyEmployee implements Employee{
+    private double amountPaid;
     
     private double hoursWorked;
     
@@ -50,15 +51,15 @@ public class HourlyEmployee implements Employee{
     return pay;
     }    
     
-    public void paid(){
-    
+    public void paid() {
+       JOptionPane.showMessageDialog(null, getAmountPaid());
     }
     
-    public void setAmountPaid(double Value){
-        
+    public void setAmountPaid(double Value) {
+        amountPaid = Value;
     }
     
-    public double getAmountPaid(){
-        
+    public double getAmountPaid() {
+        return amountPaid;
     }
 }
