@@ -4,24 +4,17 @@
  */
 package myinterface;
 
-import javax.swing.JOptionPane;
 
 /**
  *
  * @author User
  */
-public class Employee {
-    private double amountPaid;
+public interface Employee {
+
     
-    public void paid() {
-       JOptionPane.showMessageDialog(null, getAmountPaid());
-    }
+    public void paid();
     
-    public void setAmountPaid(double Value) {
-        amountPaid = Value;
-    }
+    public void setAmountPaid(double Value);
     
-    public double getAmountPaid() {
-        return amountPaid;
-    }    
+    public double getAmountPaid();    
 }
