@@ -10,22 +10,24 @@ package myabstract;
  */
 public class Runner {
   public static void main(String[] args){
-  myconcrete.HourlyEmployee myEmployee = new myconcrete.HourlyEmployee();
+  HourlyEmployee myEmployee = new HourlyEmployee();
   myEmployee.HowManyHoursWorked();
   myEmployee.PayPerHour();
   myEmployee.setPay();
   myEmployee.setAmountPaid(myEmployee.getPay());
       System.out.println("Amount paid " + myEmployee.getAmountPaid());
+  myEmployee.doSomething();
       
-  myconcrete.SalariedEmployee mySalariedEmployee = new myconcrete.SalariedEmployee();
+  SalariedEmployee mySalariedEmployee = new SalariedEmployee();
   mySalariedEmployee.HowManyYearsWorked();
   mySalariedEmployee.YearlySalary();
   mySalariedEmployee.setSalaryPay();
   mySalariedEmployee.setAmountPaid(mySalariedEmployee.getSalaryPay());
   System.out.println("Salary paid " + mySalariedEmployee.getSalaryPay());
+  mySalariedEmployee.doSomething();
   
   
-  myconcrete.SalaryPlusBonusEmployee myBonusEmployee = new myconcrete.SalaryPlusBonusEmployee();
+  SalaryPlusBonusEmployee myBonusEmployee = new SalaryPlusBonusEmployee();
   myBonusEmployee.HowManyYearsWorked();
   myBonusEmployee.YearlySalary();
   myBonusEmployee.BonusPay();

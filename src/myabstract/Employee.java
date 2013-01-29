@@ -26,4 +26,6 @@ public abstract class Employee {
         return amountPaid;
     }
     
+    abstract public void doSomething();
+    
 }

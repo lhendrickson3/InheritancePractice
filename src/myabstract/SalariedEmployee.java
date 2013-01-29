@@ -47,5 +47,9 @@ public class SalariedEmployee extends Employee{
     
     public double getSalaryPay(){
     return salaryPay;
-    }    
+    } 
+    
+    public void doSomething(){
+    System.out.println("SalariedEmployee");    
+    }
 }

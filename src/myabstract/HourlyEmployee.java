@@ -47,5 +47,9 @@ public class HourlyEmployee extends Employee{
     
     public double getPay(){
     return pay;
-    }    
+    } 
+    
+    public void doSomething(){
+    System.out.println("HourlyEmployee");    
+    }
 }
