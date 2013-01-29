@@ -9,22 +9,23 @@ package myconcrete;
  * @author User
  */
 public class Runner {
+
   public static void main(String[] args){
+  //Calling the methods from HourlyEmployee
   HourlyEmployee myEmployee = new HourlyEmployee();
   myEmployee.HowManyHoursWorked();
   myEmployee.PayPerHour();
   myEmployee.setPay();
   myEmployee.setAmountPaid(myEmployee.getPay());
       System.out.println("Amount paid " + myEmployee.getAmountPaid());
-      
+  //Calling the methods from SalariedEmployee    
   SalariedEmployee mySalariedEmployee = new SalariedEmployee();
   mySalariedEmployee.HowManyYearsWorked();
   mySalariedEmployee.YearlySalary();
   mySalariedEmployee.setSalaryPay();
   mySalariedEmployee.setAmountPaid(mySalariedEmployee.getSalaryPay());
   System.out.println("Salary paid " + mySalariedEmployee.getSalaryPay());
-  
-  
+  //Calling the methods for SalaryPlusBonusEmployee 
   SalaryPlusBonusEmployee myBonusEmployee = new SalaryPlusBonusEmployee();
   myBonusEmployee.HowManyYearsWorked();
   myBonusEmployee.YearlySalary();
