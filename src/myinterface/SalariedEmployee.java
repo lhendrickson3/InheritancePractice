@@ -48,4 +48,16 @@ public class SalariedEmployee implements Employee{
     public double getSalaryPay(){
     return salaryPay;
     }    
+    
+    public void paid(){
+        
+    }
+    
+    public void setAmountPaid(double Value){
+        
+    }
+    
+    public double getAmountPaid(){
+        
+    }    
 }

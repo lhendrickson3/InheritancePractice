@@ -10,7 +10,6 @@ package myinterface;
  * @author User
  */
 public interface Employee {
-
     
     public void paid();
     
