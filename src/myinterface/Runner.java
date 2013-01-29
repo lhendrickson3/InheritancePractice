@@ -9,23 +9,23 @@ package myinterface;
  * @author User
  */
 public class Runner {
+    //Calling the methods from HourlyEmployee
    public static void main(String[] args){
-  myconcrete.HourlyEmployee myEmployee = new myconcrete.HourlyEmployee();
+  HourlyEmployee myEmployee = new HourlyEmployee();
   myEmployee.HowManyHoursWorked();
   myEmployee.PayPerHour();
   myEmployee.setPay();
   myEmployee.setAmountPaid(myEmployee.getPay());
       System.out.println("Amount paid " + myEmployee.getAmountPaid());
-      
-  myconcrete.SalariedEmployee mySalariedEmployee = new myconcrete.SalariedEmployee();
+  //Calling the methods from SalariedEmployee     
+  SalariedEmployee mySalariedEmployee = new SalariedEmployee();
   mySalariedEmployee.HowManyYearsWorked();
   mySalariedEmployee.YearlySalary();
   mySalariedEmployee.setSalaryPay();
   mySalariedEmployee.setAmountPaid(mySalariedEmployee.getSalaryPay());
   System.out.println("Salary paid " + mySalariedEmployee.getSalaryPay());
-  
-  
-  myconcrete.SalaryPlusBonusEmployee myBonusEmployee = new myconcrete.SalaryPlusBonusEmployee();
+  //Calling the methods for SalaryPlusBonusEmployee 
+  SalaryPlusBonusEmployee myBonusEmployee = new SalaryPlusBonusEmployee();
   myBonusEmployee.HowManyYearsWorked();
   myBonusEmployee.YearlySalary();
   myBonusEmployee.BonusPay();
